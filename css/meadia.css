@@ -1,0 +1,13 @@
+@media screen (min-width:991px){
+    /* ====== Recent Properties ======= */
+    
+    /* ====== Recent Properties ======= */
+    .sale_property .img{
+        margin: 0 10px;
+    }
+}
+@media screen (max-width:990px){
+    footer a img{
+        width: 50%;
+    }
+}

@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+:root{
+    --bgcolor:#2C3C53;
+    --lightblue:#EDF4FF;
+    --hardblue:#dae7fc;
+    --bgwhitecolor:#F1F4F9;
+    --whitecolor:#fff;
+    --darkwhite:#d8d8d8;
+    --redcolor:#DB4040;
+    --darkred:#af3434;
+    --defaultcolor:#7F90A8;
+    --fontdarkcolor:#282828;
+    --fontcolor:#a4a4a4;
+}  
+    body{
+        line-height: 24px;
+        box-sizing: border-box;
+        color: var(--defaultcolor);
+        font-weight: 300;
+        font-size: 14px;
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--bgwhitecolor);
+    }
+    ul,a,h1,h2,h3,h4,h5,h6{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        display: block;
+        text-decoration: none;
+    }
+    .dark-heading{
+        font-weight: 600;
+        font-size: 28px;
+        color: var(--fontdarkcolor);
+    }
+    .heading{
+        font-weight: 500;
+        color: var(--whitecolor);
+    }
+    .sub-heading{
+        font-weight: 300;
+        font-size: 18px;
+    }
+    .bgcolore{
+        background-color:var(--bgcolor) ; 
+        color: var(--defaultcolor);  
+    }
+    .btn{
+        font-weight: 500;
+        padding: 12px 30px;
+        border-radius: 14px;
+    }
+
+    /* ============================== navbar ========== */
+    .menu{
+        padding: 30px 0 0 0;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .menu .login .btn{
+        background-color: var(--whitecolor);
+        color: #2C3C53;
+    }
+    .menu_set ul li:last-child > a{
+        font-size: 25px;
+    }
+    .menu_set ul li a{
+        color: var(--whitecolor);
+    }
+    .login .btn:hover{
+        background-color:var(--darkwhite) ;
+    }
+
+    /* ============================== second part ========== */
+    .left_side{
+        color:var(--whitecolor);
+    }
+    .left_side .text p{
+        padding: 92px 70px 0 0;
+        line-height: 52px;
+        font-size: 38px;
+        font-weight:700;
+        position: relative;
+    }
+    .left_side .text p:before{
+        content: "";
+        position: absolute;
+        width: 78%;
+        height:4px;
+        margin: 10px 0;
+        background-color: var(--redcolor);
+        left: 0;
+        top:100%;
+    }
+    .left_side .text p:after{
+        content: "";
+        position: absolute;
+        width: 0; 
+        height: 0; 
+        border-bottom: 4px solid var(--redcolor); 
+        border-right: 8px solid transparent; 
+        margin: 10px 0;
+        left: 78%;
+        top:100%;
+    }
+    .left_side .counter{
+        display: flex;
+        font-weight: 700;
+        margin: 30px 0 15px 0;
+        align-items: center;
+    }
+    .left_side .counter ul{
+        margin-right: 30px;
+    }
+    .left_side .counter ul li:nth-child(1){
+        font-size: 22px;
+    }
+    .left_side .counter ul li:nth-child(2){
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--defaultcolor);   
+    }
+    .left_side > .button{
+        margin-top: 30px;
+    }
+    .left_side .button > .btn{
+        background-color: var(--redcolor);
+        color: var(--whitecolor);
+    }
+    .left_side .button .btn:hover{
+        background-color: var(--darkred);
+    }
+    .left_side .search-box{
+        position: relative;
+        z-index: 5;
+        top: 70px;
+        padding: 25px 22px;
+        border-radius: 20px;
+        color: var(--fontcolor);
+        background-color: var(--whitecolor);
+        box-shadow: 0px 1px 3px #d8d8d8;
+    }
+    .left_side .search-box li:first-child{
+        color: var(--fontdarkcolor);
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .left_side .search-box .btn{
+        background-color: var(--redcolor);
+        color: var(--whitecolor);
+        box-shadow: 0px 1px 3px #af3434;
+    }
+    .left_side .search-box .btn:hover{
+        background-color: var(--darkred);
+    }
+    /* ============================== img part ========== */
+    .right_side .img_set .box span{
+        display: block;
+        position: relative;
+        top: 80px;
+        left: 50px;
+        z-index: 3;
+        background-size:cover;
+        background-image: url(../img/Rectangle.png);
+        width: 540px;
+        height: 540px;
+        border-radius: 20px;
+        border-top-left-radius: 120px;
+        background-position: center;
+    }
+    .right_side .img_set .box span::before{
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        transform: rotate(-45deg);
+        left: -65px;
+        top: -15px;
+        background-color: var(--bgcolor);
+    }
+    /* ============================== Use Property ========== */
+    .Use_Properties {
+        padding: 100px 0 50px 0;
+    }
+    .Use_Properties ul{
+        background-color: var(--whitecolor);
+        border-radius: 20px;
+        height: 270px;
+    }
+    .Use_Properties ul li:nth-child(2){
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .Use_Properties ul li i{
+        font-size:50px;
+        color:var(--whitecolor);
+        border-radius: 50px;
+        position: relative;
+        z-index: 5;
+    }
+    .Use_Properties ul li i::before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        background-image:linear-gradient(131.72deg, #DB4040 -1.77%, #FFD2D2 114.86%);
+    }
+    /* ============================== Resent Property ========== */
+    .sale_property .img{
+        background-color: var(--whitecolor);
+        border-radius: 22px;
+    }
+    .sale_property li{
+        display: block;
+    }
+    .sale_property .img li:first-child > img{
+        position: relative;
+    } 
+    .sale_property .img li:first-child > img::after{
+        content: "";
+        position: absolute;
+        -webkit-filter: blur(20px);
+        z-index: 999;
+        background: url(../img/opt\ 1.png);
+        width: 100px;
+        height: 100px;
+    }
+    .sale_property .img > li:nth-child(2){
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--fontdarkcolor);
+    }
+    .sale_property .img > li:nth-child(3){
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--fontdarkcolor);
+    }
+    .sale_property .img > li:nth-child(3) img{
+        width: 22px;
+        padding-right: 5px;
+    }
+    .sale_property .img .opt > li{
+        font-weight: 500;
+        font-size: 15px;
+        color: #282828;
+        padding: 10px 10px;
+    }
+    .sale_property .opt-btn{
+        background-color:var(--lightblue);
+        color: var(--fontdarkcolor);
+        border-radius: 12px;
+    }
+    .sale_property .opt-btn a{
+        color: var(--fontdarkcolor);
+    }
+    .sale_property .opt-btn:hover{
+        background-color:var(--hardblue);
+    }
+    /* ============================================================ Footer ======================================== */
+    
+    .sign-up input{
+        padding: 10px 25px;
+        border: none;
+        margin: 15px 0;
+        border-radius: 12px;
+        outline: none;
+        background-color: rgba(275, 275, 275, 12%);
+    }
+    .sign-up input::placeholder{
+        color: var(--darkwhite);
+        font-size: 12px;
+    }
+    .sign-up .btn{
+        background-color: #DB4040;
+        color: var(--whitecolor);
+    }
+    .sign-up .btn:hover{
+        background-color: var(--darkred);
+    }
+    .social a > i{
+        font-size: 16px;
+        padding: 8px 10px;
+        margin-right: 10px;
+        border-radius: 50%;
+        background-color: var(--whitecolor);
+        color: var(--bgcolor);
+        position: relative;
+        z-index: 3;
+    }
+    .social a > i:hover{
+        background-color: var(--darkwhite);
+    }
+    .footer-list ul li{
+        margin-bottom: 8px;
+    }
+    .footer-list ul li:first-child{
+        font-size: 18px;
+    }

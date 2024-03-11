@@ -1,0 +1,74 @@
+/*@import url('../fonts/font-awesome/css/font-awesome.min.css');*/
+:root{
+	--default_clr: #ddd;
+}
+*{
+	margin: 0 ;
+	padding: 0;
+}
+body{
+	font-family: ROBOTO;
+	line-height: 26px;
+	/*color: var(--default_clr);*/
+	box-sizing: border-box;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: blink;
+	display: inline-block;
+}
+.container{
+	width: 1320px;
+	margin: 0 auto;
+}
+.btn{
+	border-radius: 10px;
+	margin: 0 10px ;
+	padding: 10px 30px;
+}
+header{
+	background-color: #242212;
+}
+header .content {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+header .content div{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header .content > .opt > ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header .content > .opt > ul > li{
+	margin: 0 10px;
+}
+.opt > ul a {
+	font-family: monospace;
+    color: #fff;
+    text-transform:uppercase;
+ 	letter-spacing: 3px;   
+    font-weight:regular;
+}
+.opt > ul a:active{
+	color:#156191 ;
+}
+.cont_btn > .btn{
+	background-color: #156191;
+	color: #fff;
+	text-transform:uppercase;
+ 	letter-spacing: 3px;   
+	font-family: monospace;
+
+}
+main{
+	padding: 10px ;
+	margin: 20px 0;
+	background-color: hotpink;
+}
